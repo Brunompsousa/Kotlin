@@ -8,3 +8,4 @@ My Kotlin studies ( IDE: IntelliJ )
 • Exer_5 - If/Else + For + Try/Catch<br>
 • Exer_6 - When (Switch em outras linguagens)<br>
 • Exer_7 - For (interacoes com Int, String e Listas)<br>
+• Exer_8 - Funcoes (com/sem return e recurcao)<br>
