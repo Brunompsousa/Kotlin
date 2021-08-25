@@ -1,9 +1,9 @@
 • VARIAVEIS
 
-var - Pode ser alterada sem problema
-val - Apos receber dados, esta nao pode ser alterada, funcionando como "final" em java
+var - Pode ser alterada sem problema.
+val - Apos receber dados, esta nao pode ser alterada, funcionando como "final" em java.
 
-private - Apenas pode ser acedida dentro da classe
+private - Apenas pode ser acedida dentro da classe.
 
 var X = listof() - para criarmos uma lista, podemos ainda meter o conteudo dentro dos ()
 
@@ -21,14 +21,14 @@ Fazer o print da conta de dois numeros metemos-os entre {}
 
 • NUMERO RANDOM
 
-para teremos um numero random apenas temos de fazer (X..Y).random(), sendo X o primeiro numero e Y o ultimo numero
+para teremos um numero random apenas temos de fazer (X..Y).random(), sendo X o primeiro numero e Y o ultimo numero.
 
 -----
 
 • OPERADORES
 
-(X in Y) - verificar se X esta na lista Y, isto é, verifica se X e igual a algum dos membros da lista Y
-    podemos tambem trabalhar com !in
+(X in Y) 
+-> Verificar se X esta na lista Y, isto é, verifica se X e igual a algum dos membros da lista Y [Podemos tambem trabalhar com !in]
 
 
 -- For --
@@ -44,9 +44,9 @@ for(){ *code* }
 -- Switch --
 when(*variavel*){
   *code*
-  in x..y -> *code*     //Para intervalos de numeros
-  x,y,b -> *code*       //Para varios valores, tanto numericos ou strings
-  is *tipo* -> *code*   //Verificar se a variavel é de um certo tipo
+  in x..y -> *code*     //Para intervalos de numeros.
+  x,y,b -> *code*       //Para varios valores, tanto numericos ou strings.
+  is *tipo* -> *code*   //Verificar se a variavel é de um certo tipo.
 }
 
 -----
@@ -55,19 +55,27 @@ when(*variavel*){
 
 fun *nome*(*assinatura*){ *code* }
 
--> É possivel ter funções com o mesmo nome, no entanto a sua assinatura, que são os parametros que recebe, tem de ser diferente
-    addNum(n1:Int,n2:Int)   -> Recebe dois Int
-    addNum(n1:Float,n2:Int) -> Recebe um Int e um Float
+-> É possivel ter funções com o mesmo nome, no entanto a sua assinatura, que são os parametros que recebe, tem de ser diferente.
+    addNum(n1:Int,n2:Int)   -> Recebe dois Int.
+    addNum(n1:Float,n2:Int) -> Recebe um Int e um Float.
     
--> Parametros nao obrigatórios na assinatura da funcão, para isso estes precisam de ter um valor default atribuido
-    addNum1(n1:Int,n2:Int,message:String = "A soma é ")
-    
+-> Parametros nao obrigatórios na assinatura da funcão, para isso estes precisam de ter um valor default atribuido.
+    addNum1(n1:Int,n2:Int,message:String = "A soma é ") 
+
+Na chamada da função podemos nao atribuir valor a 'message' ou caso o façamos o mesmo será sobrescrito.
+
 
 -----
 
 • CLASSES E CONTRUTORES
 
+class *nome* (*_nome:tipo*){ *code* }
+-> No contrutor da classe apenas e necessario o nome da variavel, usando _nome, para que assim seja mais facil identificar.
 
+-> Criar variaveis com o mesmo nome das do contrutor para que seja para la passado o valor. Ex: nome = _nome
+
+init{ *code* }
+-> Usa-se o init{} para que seja executado codigo assim que seja criado um objecto.
 
 -----
 
@@ -76,4 +84,11 @@ fun *nome*(*assinatura*){ *code* }
 try 
 { *Code* } catch (e: Exception){ *Code* } 
 
-e -> contem a informação da exceção que foi chamada
+e -> contem a informação da exceção que foi chamada.
+
+-----
+
+• OUTRAS UTILIDADES
+
+Thread.sleep(*tempo*) 
+-> Faz com que a execução seja metida em pausa, o tempo e dado em milisegundos. (1000 = 1sec)
