@@ -3,6 +3,8 @@
 var - Pode ser alterada sem problema
 val - Apos receber dados, esta nao pode ser alterada, funcionando como "final" em java
 
+private - Apenas pode ser acedida dentro da classe
+
 var X = listof() - para criarmos uma lista, podemos ainda meter o conteudo dentro dos ()
 
 -----
@@ -30,7 +32,7 @@ para teremos um numero random apenas temos de fazer (X..Y).random(), sendo X o p
 
 
 -- For --
-for(){ *code* }
+<em>for(){ *code* } <em>
 -> (i in x..y) [i>=y]
 -> (i in x until y) [i>y]
 -> (i in y downTo x) [i>=x] [Começa em y até x]
@@ -49,12 +51,27 @@ when(*variavel*){
 
 -----
 
-• Classes
+• FUNÇÕES
+
+fun *nome*(*assinatura*){ *code* }
+
+-> É possivel ter funções com o mesmo nome, no entanto a sua assinatura, que são os parametros que recebe, tem de ser diferente
+    addNum(n1:Int,n2:Int)   -> Recebe dois Int
+    addNum(n1:Float,n2:Int) -> Recebe um Int e um Float
+    
+-> Parametros nao obrigatórios na assinatura da funcão, para isso estes precisam de ter um valor default atribuido
+    addNum1(n1:Int,n2:Int,message:String = "A soma é ")
+    
+
+-----
+
+• CLASSES E CONTRUTORES
+
 
 
 -----
 
-• EXCECOES
+• EXCEÇÕES
 
 try 
 { *Code* } catch (e: Exception){ *Code* } 
