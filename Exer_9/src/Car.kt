@@ -1,5 +1,7 @@
 class Car (_carBrand:String){ //Constructor need a brand to make a car
 
+    //init{ ... } This is call after the object is created, its work like a 2nd contructor
+    
     private var isTurnedOn = false  //Verify if the car is on/off
     var speed = 0                   //Speed the car is running
     var brand = _carBrand            //variable that receive the brand from que constructor
