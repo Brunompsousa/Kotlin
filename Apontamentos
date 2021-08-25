@@ -32,7 +32,7 @@ para teremos um numero random apenas temos de fazer (X..Y).random(), sendo X o p
 
 
 -- For --
-<em>for(){ *code* } <em>
+for(){ *code* } 
 -> (i in x..y) [i>=y]
 -> (i in x until y) [i>y]
 -> (i in y downTo x) [i>=x] [Começa em y até x]
