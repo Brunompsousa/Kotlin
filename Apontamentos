@@ -67,15 +67,15 @@ Na chamada da função podemos nao atribuir valor a 'message' ou caso o façamos
 
 -----
 
-• CLASSES E CONTRUTORES
+• CLASSES E CONSTRUTORES
 
 class *nome* (*_nome:tipo*){ *code* }
--> No contrutor da classe apenas e necessario o nome da variavel, usando _nome, para que assim seja mais facil identificar.
+-> No construtor da classe apenas e necessario o nome da variavel, usando _nome, para que assim seja mais facil identificar.
 
--> Criar variaveis com o mesmo nome das do contrutor para que seja para la passado o valor. Ex: nome = _nome
+-> Criar variaveis com o mesmo nome das do construtor para que seja passado o valor. Ex: nome = _nome
 
 init{ *code* }
--> Usa-se o init{} para que seja executado codigo assim que seja criado um objecto.
+-> Usa-se o init{} para que seja executado codigo assim que criado um objecto.
 
 -----
 
