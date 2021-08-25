@@ -11,7 +11,7 @@ var X = listof() - para criarmos uma lista, podemos ainda meter o conteudo dentr
 
 • PRINT
 
-Usamos o $ antes do nome da variavel se dentro dos "..." com o texto. 
+Usamos o $ antes do nome da variavel dentro dos "..." com o texto. 
 
 Formatar floats em texto -> "%.*f".format("variavel")
 
