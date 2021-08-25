@@ -1,8 +1,8 @@
-class Car (carBrand:String){ //Constructor need a brand to make a car
+class Car (_carBrand:String){ //Constructor need a brand to make a car
 
     private var isTurnedOn = false  //Verify if the car is on/off
     var speed = 0                   //Speed the car is running
-    var brand = carBrand            //variable that receive the brand from que constructor
+    var brand = _carBrand            //variable that receive the brand from que constructor
 
     fun startEngine(){
         this.isTurnedOn = true
