@@ -11,17 +11,17 @@ var X = listof() - para criarmos uma lista, podemos ainda meter o conteudo dentr
 
 • PRINT
 
-Imprimir variaveis usamos o $ antes do nome da mesma, tanto elas dentro das "..." com o texto. 
+Usamos o $ antes do nome da variavel se dentro dos "..." com o texto. 
 
 Formatar floats em texto -> "%.*f".format("variavel")
 
-Fazer o print da conta de dois numeros metemos-os entre {}
+Fazer o print da conta de dois numeros metemos entre {}
 
 -----
 
 • NUMERO RANDOM
 
-para teremos um numero random apenas temos de fazer (X..Y).random(), sendo X o primeiro numero e Y o ultimo numero.
+-> Para um numero random apenas temos de fazer (X..Y).random(), sendo X o primeiro numero e Y o ultimo numero.
 
 -----
 
