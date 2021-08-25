@@ -77,6 +77,13 @@ class *nome* (*_nome:tipo*){ *code* }
 init{ *code* }
 -> Usa-se o init{} para que seja executado codigo assim que criado um objecto.
 
+GETTER/SETTER
+-> Em kotlin não é necessaria a criacao destas funcoes, no entanto, podemos as criar após a variavel.
+ var *nome*: *tipo*
+ get() { *code* return field } 
+ set(value) { field = value } [field funciona como um ponteiro para a variavel]
+  
+
 -----
 
 • EXCEÇÕES
