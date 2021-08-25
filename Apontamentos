@@ -1,0 +1,62 @@
+• VARIAVEIS
+
+var - Pode ser alterada sem problema
+val - Apos receber dados, esta nao pode ser alterada, funcionando como "final" em java
+
+var X = listof() - para criarmos uma lista, podemos ainda meter o conteudo dentro dos ()
+
+-----
+
+• PRINT
+
+Imprimir variaveis usamos o $ antes do nome da mesma, tanto elas dentro das "..." com o texto. 
+
+Formatar floats em texto -> "%.*f".format("variavel")
+
+Fazer o print da conta de dois numeros metemos-os entre {}
+
+-----
+
+• NUMERO RANDOM
+
+para teremos um numero random apenas temos de fazer (X..Y).random(), sendo X o primeiro numero e Y o ultimo numero
+
+-----
+
+• OPERADORES
+
+(X in Y) - verificar se X esta na lista Y, isto é, verifica se X e igual a algum dos membros da lista Y
+    podemos tambem trabalhar com !in
+
+
+-- For --
+for(){ *code* }
+-> (i in x..y) [i>=y]
+-> (i in x until y) [i>y]
+-> (i in y downTo x) [i>=x] [Começa em y até x]
+-> (i in x..y step z) [i<=y] [Começa em x até y dando saltos de z]
+-> (i in *Listof*) [i recebe um elemento da lista a cada eteracao e é executado o até ao ultimo elementos na lista]
+-> (i in *String*) [i recebe um caracter da string a cada eteracao e é executado o até ao ultimo caracter da String, contando tambem os espaços]
+
+
+-- Switch --
+when(*variavel*){
+  *code*
+  in x..y -> *code*     //Para intervalos de numeros
+  x,y,b -> *code*       //Para varios valores, tanto numericos ou strings
+  is *tipo* -> *code*   //Verificar se a variavel é de um certo tipo
+}
+
+-----
+
+• Classes
+
+
+-----
+
+• EXCECOES
+
+try 
+{ *Code* } catch (e: Exception){ *Code* } 
+
+e -> contem a informação da exceção que foi chamada
