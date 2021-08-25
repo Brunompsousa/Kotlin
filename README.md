@@ -10,3 +10,4 @@ My Kotlin studies ( IDE: IntelliJ )
 • Exer_7 - For (interacoes com Int, String e Listas)<br>
 • Exer_8 - Funcoes (com/sem return e recurcao)<br>
 • Exer_9 - Classes e funcoes<br>
+• Exer_10 - Getter/Setter <br>
