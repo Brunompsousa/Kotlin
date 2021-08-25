@@ -55,7 +55,7 @@ when(*variavel*){
 
 fun *nome*(*assinatura*){ *code* }
 
--> É possivel ter funções com o mesmo nome, no entanto a sua assinatura, que são os parametros que recebe, tem de ser diferente.
+-> É possivel ter funções com o mesmo nome, no entanto a sua assinatura, que são os parametros que recebe, têm que ser diferente.
     addNum(n1:Int,n2:Int)   -> Recebe dois Int.
     addNum(n1:Float,n2:Int) -> Recebe um Int e um Float.
     
