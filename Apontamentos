@@ -64,18 +64,26 @@ fun *nome*(*assinatura*){ *code* }
 
 Na chamada da função podemos nao atribuir valor a 'message' ou caso o façamos o mesmo será sobrescrito.
 
+OVERRIDE
+-> Quando é feita sobreposição de uma funcao, caso se queira, podemos executar o codigo da funcao "principal" usando 'super.*nomeFuncao*()'
+  open fun olaMundo(){*code*}
+  override fun olaMundo(){ super.olaMundo() *code* }
+
 
 -----
 
 • CLASSES E CONSTRUTORES
 
-class *nome* (*_nome:tipo*){ *code* }
+-> IMPORTANTE TANTO NAS CLASSES COMO EM FUNCOES(override)! Quando criada uma classe, em kotlin, a sua predefenição é final, que impede haver herança por parte de outras classes.
+   Quando queremos que uma classe seja herdada usamos a palavra 'open' antes do nome. (Ex. open class Pessoa)
+   
 -> No construtor da classe apenas e necessario o nome da variavel, usando _nome, para que assim seja mais facil identificar.
+class *nome* (*_nome:tipo*){ *code* }
 
 -> Criar variaveis com o mesmo nome das do construtor para que seja passado o valor. Ex: nome = _nome
 
-init{ *code* }
 -> Usa-se o init{} para que seja executado codigo assim que criado um objecto.
+init{ *code* }
 
 GETTER/SETTER
 -> Em kotlin não é necessaria a criacao destas funcoes, no entanto, podemos as criar após a variavel.
@@ -83,6 +91,10 @@ GETTER/SETTER
  get() { *code* return field } 
  set(value) { field = value } [field funciona como um ponteiro para a variavel]
   
+HERANÇA
+-> Para que uma classe herde outra usamos ':' dps dos parametros, seguido do nome e das variaveis usadas na classe que estamos a herdar.
+  open class Pessoa(nome: String, idd: Int){ *code* }
+  class Professor(nome:String, idd: Int): Pessoa(nome, idd){ *code* }
 
 -----
 
