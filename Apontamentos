@@ -3,7 +3,9 @@
 var - Pode ser alterada sem problema.
 val - Apos receber dados, esta nao pode ser alterada, funcionando como "final" em java.
 
-private - Apenas pode ser acedida dentro da classe.
+private - Apenas pode ser acedido dentro da classe e não é herdado.
+protected - Mesmo que private mas é herdado
+internal - Apenas é usada no modulo.
 
 var X = listof() - para criarmos uma lista, podemos ainda meter o conteudo dentro dos ()
 
