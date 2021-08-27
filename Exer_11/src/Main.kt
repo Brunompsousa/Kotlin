@@ -1,10 +1,10 @@
-open class Person(name: String, age: Int){
+open class Person(_name: String, _age: Int){
 
     val applePrice = 10
 
     init {
-        println("My name is $name")
-        println("My age is $age")
+        println("My name is $_name")
+        println("My age is $_age")
     }
 
     open fun walk(){
@@ -12,7 +12,7 @@ open class Person(name: String, age: Int){
     }
 }
 
-class Theacher(name:String, age: Int):Person(name, age){
+class Theacher(_name:String, _age: Int):Person(_name, _age){
 
     fun mathCalc(){
 
@@ -21,7 +21,7 @@ class Theacher(name:String, age: Int):Person(name, age){
     }
 }
 
-class BusinessMan(name:String, age: Int):Person(name, age){
+class BusinessMan(_name:String, _age: Int):Person(_name, _age){
 
     fun doBusiness(){
 
