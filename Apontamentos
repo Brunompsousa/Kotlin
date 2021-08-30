@@ -76,7 +76,8 @@ OVERRIDE
 
 • CLASSES E CONSTRUTORES
 
--> IMPORTANTE TANTO NAS CLASSES COMO EM FUNCOES(override)! Quando criada uma classe, em kotlin, a sua predefenição é final, que impede haver herança por parte de outras classes.
+-> IMPORTANTE TANTO NAS CLASSES COMO EM FUNCOES(override)! Quando criada uma classe, em kotlin, a sua predefenição é final, que impede haver
+herança por parte de outras classes.
    Quando queremos que uma classe seja herdada usamos a palavra 'open' antes do nome. (Ex. open class Pessoa)
    
 -> No construtor da classe apenas e necessario o nome da variavel, usando _nome, para que assim seja mais facil identificar.
@@ -97,6 +98,12 @@ HERANÇA
 -> Para que uma classe herde outra usamos ':' dps dos parametros, seguido do nome e das variaveis usadas na classe que estamos a herdar.
   open class Pessoa(nome: String, idd: Int){ *code* }
   class Professor(nome:String, idd: Int): Pessoa(nome, idd){ *code* }
+
+NESTED / INNER CLASSES
+-> Uma nested classe não tem acesso a nada do que esteja fora dela.
+-> Uma inner classe tem acesso a tudo o que está fora dela, mesmo sendo privados, este acesso é na programaçao da classe e não quando é criado um objeto.
+  Para que tenhamos acesso a toda a classe no MAIN temos de criar um objecto da classe principal e ai sim podemos acessar tanto o conteudo desta
+como o conteudo das sua/s Inner classe/s. (Exer_11)
 
 -----
 
