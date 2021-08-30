@@ -12,3 +12,4 @@ My Kotlin studies ( IDE: IntelliJ )
 • Exer_9 - Classes e funcoes<br>
 • Exer_10 - Getter/Setter <br>
 • Exer_11 - Herança <br>
+• Exer_12 - Nested e Inner classes <br>
