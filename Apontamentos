@@ -109,6 +109,12 @@ INTERFACE
 -> É possivel atribuir varias interfaces a uma classe
   class Cao : animal, mamifero { *code* }
 
+-> No caso de haver uma função com o mesmo nome em duas interfaces, podemos entao fazer:
+  override fun escrever(){ super<*nomeInterface1*>.escrever(); super<*nomeInterface2*>.escrever() }
+Outra opção será fazer override da funcao chamando apenas uma das funcoes super e criar uma nova funcao para a outra, ficando separadas,
+  override fun escrever(){ super<*nomeInterface1*>.escrever() }
+  fun escrever2(){ super<*nomeInterface2*>.escrever() }
+
 -----
 
 • EXCEÇÕES
