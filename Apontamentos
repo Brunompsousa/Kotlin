@@ -105,6 +105,10 @@ NESTED / INNER CLASSES
   Para que tenhamos acesso a toda a classe no MAIN temos de criar um objecto da classe principal e ai sim podemos acessar tanto o conteudo desta
 como o conteudo das sua/s Inner classe/s. (Exer_11)
 
+INTERFACE
+-> É possivel atribuir varias interfaces a uma classe
+  class Cao : animal, mamifero { *code* }
+
 -----
 
 • EXCEÇÕES
