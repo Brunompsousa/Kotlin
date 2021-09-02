@@ -88,24 +88,24 @@ class *nome* (*_nome:tipo*){ *code* }
 -> Usa-se o init{} para que seja executado codigo assim que criado um objecto.
 init{ *code* }
 
-GETTER/SETTER
+ ○ GETTER/SETTER
 -> Em kotlin não é necessaria a criacao destas funcoes, no entanto, podemos as criar após a variavel.
  var *nome*: *tipo*
  get() { *code* return field } 
  set(value) { field = value } [field funciona como um ponteiro para a variavel]
   
-HERANÇA
+ ○ HERANÇA
 -> Para que uma classe herde outra usamos ':' dps dos parametros, seguido do nome e das variaveis usadas na classe que estamos a herdar.
   open class Pessoa(nome: String, idd: Int){ *code* }
   class Professor(nome:String, idd: Int): Pessoa(nome, idd){ *code* }
 
-NESTED / INNER CLASSES
+ ○ NESTED / INNER CLASSES
 -> Uma nested classe não tem acesso a nada do que esteja fora dela.
 -> Uma inner classe tem acesso a tudo o que está fora dela, mesmo sendo privados, este acesso é na programaçao da classe e não quando é criado um objeto.
   Para que tenhamos acesso a toda a classe no MAIN temos de criar um objecto da classe principal e ai sim podemos acessar tanto o conteudo desta
 como o conteudo das sua/s Inner classe/s. (Exer_11)
 
-INTERFACE
+ ○ INTERFACE
 -> É possivel atribuir varias interfaces a uma classe
   class Cao : animal, mamifero { *code* }
 
@@ -114,6 +114,14 @@ INTERFACE
 Outra opção será fazer override da funcao chamando apenas uma das funcoes super e criar uma nova funcao para a outra, ficando separadas,
   override fun escrever(){ super<*nomeInterface1*>.escrever() }
   fun escrever2(){ super<*nomeInterface2*>.escrever() }
+-----
+
+• OBJECTOS
+-> Funcionam como classes no entanto não é necessario ser instanciado
+ 
+ ○ Companion Object 
+-> São objetos criandos dentro de uma classe, podem ser acedidos sem instancia a classe.
+  (Exer_13)
 
 -----
 
