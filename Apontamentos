@@ -88,6 +88,8 @@ class *nome* (*_nome:tipo*){ *code* }
 -> Usa-se o init{} para que seja executado codigo assim que criado um objecto.
 init{ *code* }
 
+-> Usa-se '.apply{}' quando queremos fazer varias alterações a um objeto criado para que nao seja preciso estar sempre a escrever '*nome_objeto*.*campo*'
+
  ○ GETTER/SETTER
 -> Em kotlin não é necessaria a criacao destas funcoes, no entanto, podemos as criar após a variavel.
  var *nome*: *tipo*
@@ -114,6 +116,7 @@ como o conteudo das sua/s Inner classe/s. (Exer_11)
 Outra opção será fazer override da funcao chamando apenas uma das funcoes super e criar uma nova funcao para a outra, ficando separadas,
   override fun escrever(){ super<*nomeInterface1*>.escrever() }
   fun escrever2(){ super<*nomeInterface2*>.escrever() }
+  
 -----
 
 • OBJECTOS
